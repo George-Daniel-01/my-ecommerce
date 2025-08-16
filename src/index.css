@@ -1,4 +1,46 @@
-*{
+
+
+@layer theme, base, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+
+
+@layer base {
+  body {
+    @apply min-h-screen;
+       font-family: 'Outfit', sans-serif;
+  }
+
+  a {
+    @apply no-underline;
+   @apply text-inherit
+  
+  }
+
+  li {
+    @apply list-none
+  }
+
+  .app {
+    @apply w-4/5;
+    @apply m-auto
+  }
+}
+
+
+
+
+
+
+
+
+/* *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
@@ -10,4 +52,4 @@ body{
 a{
   text-decoration: none;
   color: inherit;
-}
+} */

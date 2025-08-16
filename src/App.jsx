@@ -1,10 +1,13 @@
 import React from 'react'
 import Narbar from './components/Narbar/Narbar'
 
-export const App = () => {
+
+ const App = () => {
   return (
     <div className='app'>
-       <Narbar/>
+    <Narbar/>
     </div>
   )
 }
+
+export default App;
