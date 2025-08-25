@@ -1,27 +1,27 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-
+import "./Footer.css"
 const Footer = () => {
   return (
     <div
-      className="text-[#d9d9d9] bg-[#323232] flex-col flex items-center p-[20px_8vw] pt-[80px] mt-[100px]"
+      className="footer text-[#d9d9d9] bg-[#323232] flex-col flex items-center p-[20px_8vw] pt-[80px] mt-[100px]"
       id="footer"
     >
-      <div className=" w-[100%] grid grid-cols-[2fr_1fr_1fr] gap-[80px]  ">
-        <div className="flex flex-col  items-center   items-start">
+      <div className="footer-content   w-[100%] grid grid-cols-[2fr_1fr_1fr] gap-[80px]  ">
+        <div className="footer-content-left  flex flex-col  items-center   items-start">
           <img src={assets.logo} alt="" />
-          <p className="mb-3">
+          <p className="  mb-3">
             Lorem Ipsum is simply dummy text of the pritig and typesetting
             industry. When an ukown printer took a galley of type a galley of
             type and scrambled it to make a type specimen book.
           </p>
-          <div className="flex gap-5">
+          <div className="footer-social-icons flex gap-5">
             <img className="rounded" src={assets.facebook_icon} alt="" />
             <img className="rounded" src={assets.twitter_icon} alt="" />
             <img className="rounded" src={assets.linkedin_icon} alt="" />
           </div>
         </div>
-        <div className="mt-[10px]">
+        <div className=" footer-content-center mt-[10px]">
           <h2 className="text-2xl font-[900] mb-[10px]  text-[white]">
             COMPANY
           </h2>
@@ -32,7 +32,7 @@ const Footer = () => {
             <li className="cursor-pointer">Privacy policy</li>
           </ul>
         </div>
-        <div className="mt-[10px]">
+        <div className=" footer-content-right mt-[10px]">
           <h2 className="text-2xl font-[900] mb-[10px]  text-[white]">
             GET IN TOUCH
           </h2>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-[100%] h-[2px] m-[20px_0] bg-[gray] border-none" />
-      <p className="">Copyright 2025 © George Daniel - All rights reserved.</p>
+      <p className="footer-copyright">Copyright 2025 © George Daniel - All rights reserved.</p>
     </div>
   );
 };

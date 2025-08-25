@@ -9,12 +9,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 
-
-
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply min-h-screen;
-       font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
   }
 
   a {

@@ -23,7 +23,7 @@ const Fooditem = ({ id, name, price, description, image }) => {
             alt=""
           />
         ) : (
-          <div className="absolute bottom-[15px] right-[15px] flex items-center gap-[10px] p-[6px] rounded-[50px] bg-white "  >
+          <div className="absolute bottom-[15px] right-[15px] flex items-center gap-[10px] p-[6px] rounded-[50px] bg-white">
             <img className="w-[30px]"
               onClick={() => removeFromCart(id)}
               src={assets.remove_icon_red}
