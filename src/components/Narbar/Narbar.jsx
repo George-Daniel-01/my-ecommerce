@@ -4,7 +4,7 @@ import "./Narbar.css"
 import { Link } from "react-router-dom";
 
 
-const Narbar = () => {
+const Narbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("home");
 
   return (
@@ -56,7 +56,7 @@ const Narbar = () => {
           <img src={assets.basket_icon} alt="" className="" />
           <div className="dot  absolute min-w-[10px]  min-h-[10px] bg-[#FF6347]  rounded-[5px] top-[-8px] right-[-8px]"></div>
         </div>
-        <button className="signup  bg-transparent text-[16px] border-2 border-[#FF6347] text-[#49557e] p-[10px_30px] rounded-[50px] cursor-pointer hover:bg-[#fff4f2] transition delay-[0.2] ">
+        <button onClick={()=> setShowLogin(true)} className="signup  bg-transparent text-[16px] border-2 border-[#FF6347] text-[#49557e] p-[10px_30px] rounded-[50px] cursor-pointer hover:bg-[#fff4f2] transition delay-[0.2] ">
       Sign in
         </button>
       </div>
